@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Reusable CSS */
@@ -49,6 +49,15 @@ a {
     margin: 0 20px;
 }
 
+.navbar-nav .nav-link:hover {
+    color: yellow !important;
+    border-bottom: 2px solid yellow;
+}
+
+.navbar-nav .nav-link {
+    transition: 0.8s ease;
+}
+
 /* Section  */
 
 section {
@@ -69,3 +78,8 @@ section {
     background-color: yellow;
     color: #000;
 }
+
+/* Carousel */
+.carousel-item img {
+    margin: 0 auto; /* Center the image within the carousel */
+  }
