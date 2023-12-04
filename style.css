@@ -83,3 +83,46 @@ section {
 .carousel-item img {
     margin: 0 auto; /* Center the image within the carousel */
   }
+
+/* Movies Details */
+.movie-details,
+.movie-news {
+    padding: 20px;
+    border: 1px solid #fff;
+    color: #fff;
+    height: 100%; 
+}
+
+.movie-details {
+    background-color: #000; /* Black background color for movie details section */
+}
+
+.movie-news {
+    background-color: #000; /* Black background color for movie news section */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.movie-header {
+    color: yellow;
+}
+
+
+
+
+
+
+
+/* Mobile View */
+@media (max-width: 767px) {
+    .details {
+        margin-bottom: 20px !important;
+    }
+
+    .movie-sub {
+        margin-bottom: 20px;
+    }
+}
