@@ -1,4 +1,5 @@
 /* Universal  */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +7,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
 /* Reusable CSS */
-:root {
-    --section-margin: 20px 0; 
+
+ :root {
+    --section-margin: 20px 0;
 }
 
 a {
@@ -16,18 +19,22 @@ a {
     color: black;
 }
 
+
 /* NavBar */
+
 .navbar {
-    background-color: #343a40; /* Dark background color */
+    background-color: #343a40;
+    /* Dark background color */
 }
 
 .navbar-light .navbar-brand,
 .navbar-light .navbar-nav .nav-link {
-    color: #ffffff !important; /* White text color */
+    color: #ffffff !important;
+    /* White text color */
 }
 
 .navbar-light .navbar-toggler-icon {
-    background-color: yellow; 
+    background-color: yellow;
 }
 
 .navbar-brand {
@@ -36,12 +43,12 @@ a {
 }
 
 .navbar-brand .logo {
-    color: yellow; 
+    color: yellow;
 }
 
 .navbar-toggler {
-    background-color: transparent; 
-    border: 1px solid yellow; 
+    background-color: transparent;
+    border: 1px solid yellow;
     color: yellow;
 }
 
@@ -58,11 +65,13 @@ a {
     transition: 0.8s ease;
 }
 
+
 /* Section  */
 
 section {
     margin: var(--section-margin);
 }
+
 
 /* Search Bar */
 
@@ -79,50 +88,168 @@ section {
     color: #000;
 }
 
+
 /* Carousel */
+
 .carousel-item img {
-    margin: 0 auto; /* Center the image within the carousel */
-  }
-
-/* Movies Details */
-.movie-details,
-.movie-news {
-    padding: 20px;
-    border: 1px solid #fff;
-    color: #fff;
-    height: 100%; 
+    margin: 0 auto;
+    /* Center the image within the carousel */
 }
 
-.movie-details {
-    background-color: #000; /* Black background color for movie details section */
+
+/* Footer */
+
+.footer-content {
+    padding: 5px 5px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1c2023;
 }
 
-.movie-news {
-    background-color: #000; /* Black background color for movie news section */
+.footer-content ul {
+    list-style: none;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+.footer-content h1 {
+    font-size: 18px;
+    /* Adjusted font size */
+    line-height: 117%;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-weight: 500;
 }
 
-.movie-header {
+.footer-content h2 {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.footer-content ul li a {
+    color: #ffffffcc;
+    text-decoration: none;
+}
+
+.logoinfo {
+    margin-right: 0;
+}
+
+.logoinfo .navbar-brand {
+    color: white;
+    font-size: 25px;
+}
+
+
+/* copyright section */
+
+.outside-footer {
+    background-color: #1c2023;
+    border-top: solid white;
+    padding: 5px 5px;
+    position: relative;
+}
+
+.outside-footer h2 {
+    font-size: 14px;
+    padding: 5px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+}
+
+
+/* Contact Us section*/
+
+.contact-details {
+    margin-top: 10px;
+}
+
+.contact-details li {
+    list-style: none;
+    margin: 5px 5px;
+    margin-right: 0px;
+}
+
+.contact-details li a {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+.contact-details .fa {
+    color: #f1f1f1;
+    margin-right: 5px;
+}
+
+
+/* about section */
+
+.about-section {
+    margin-top: 15px;
+}
+
+.about-section ul {
+    padding: 10px 0;
+}
+
+.about-section ul li {
+    padding: 5px 0;
+    transition: 0.8s;
+}
+
+.about-section a:hover {
     color: yellow;
 }
 
+.footer .footer-content .about-section a {
+    color: #000;
+}
 
 
+/* social media section */
 
+.media-content {
+    margin-top: 15px;
+}
 
+.media-content h1 {
+    padding-left: 12px;
+}
 
+.socials {
+    padding: 20px 0px;
+}
 
-/* Mobile View */
-@media (max-width: 767px) {
-    .details {
-        margin-bottom: 20px !important;
+.socials .logobox a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 30px;
+    transition: 0.8s ease;
+}
+
+.socials a:hover {
+    color: yellow;
+}
+
+@media only screen and (max-width: 749px) {
+    #footer .footer-content {
+        padding: 10px 10px;
+        display: block;
     }
+    .media-content {
+        padding: 15px 0;
+        /* Adjusted padding */
+    }
+}
 
-    .movie-sub {
-        margin-bottom: 20px;
+@media (max-width: 768px) {
+    .footer-content {
+        display: block;
+        padding: 5px 5px;
+    }
+    .media-content {
+        padding-top: 10px;
+    }
+    .about-section {
+        padding: 15px 0;
     }
 }
