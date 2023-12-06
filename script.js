@@ -14,7 +14,7 @@ function getMovieResults() {
     var movie = $("#search-input").val();
   
     // construct our URL
-    var queryURL = "https://api.themoviedb.org/3/search/multi?query=" + movie + "%20&include_adult=false&language=en-US&page=1&api_key=e7942451abadfbecdc2ebc370f0781ac";
+    var queryURL = "https://api.themoviedb.org/3/search/multi?query=" + movie + "%20&include_adult=false&language=en-US&page=1&api_key=82837fb1b2989de9a2119490555d3ff2";
   
 
     // fetch the data
@@ -24,6 +24,16 @@ function getMovieResults() {
       })
       .then(function (data) {
         console.log(data);
+
+        // Update your HTML with the movie details as needed
+        $("#title").text("Title: " + data.results[0].original_title);
+        $("#rating").text("Rating: " + data.results[0].vote_average);
+        $("#genre").text("Release Date: " + data.results[0].release_date);
+        $("#description").text("Description: " + data.results[0].overview);
+
+        // Update the movie image with the poster path
+        var posterPath = "https://image.tmdb.org/t/p/w500" + data.results[0].poster_path;
+        $("#movie_image").attr("src", posterPath);
       });
 
       
