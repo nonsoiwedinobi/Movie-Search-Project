@@ -9,6 +9,15 @@ $("#search-button").on("click", function (event) {
     
     });
 
+// Function to handle "Enter" key press in the search input
+$("#search-input").keydown(function (event) {
+  // Check if the pressed key is "Enter" (key code 13)
+  if (event.which === 13) {
+      event.preventDefault();
+    getMovieResults();
+    getNewsResults();
+  }
+});
 function getMovieResults() {  
     // Here we grab the text from the input box
     var movie = $("#search-input").val();
