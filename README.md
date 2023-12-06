@@ -44,7 +44,7 @@ What2Watch is a web application designed to provide users with a seamless experi
 4. Explore detailed information about the selected content.
 5. Stay informed with the latest movie news.
 
-![Alt text](image-4.png)
+![Alt text](images/image-4.png)
 
 ## APIs Used
 
@@ -53,9 +53,9 @@ What2Watch is a web application designed to provide users with a seamless experi
 
 ## Codes Used
 
-![Alt text](image.png)
-![Alt text](image-3.png)
-![Alt text](image-2.png)
+![Alt text](images/image.png)
+![Alt text](images/image-3.png)
+![Alt text](images/image-2.png)
 
 ## Contributing
 
