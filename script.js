@@ -55,6 +55,8 @@ function getNewsResults() {
     var news = $("#search-input").val();
 
     var queryURL = "https://api.currentsapi.services/v1/search?keywords=" + news + "&language=en&apiKey=KSPwA6FKSdpnL53Uj6Mofz_OsBlL2E62hiZPojCTXf0LvC2z";
+    $("#news-text").text("Loading...")
+    $("#news-text-two").text("Loading...")
 
     fetch(queryURL)
       .then(function (response) {
@@ -66,6 +68,11 @@ function getNewsResults() {
         var descriptionEl = $("<p>");
         descriptionEl.text(data.news[0].description);
         $("#news-text").append(descriptionEl);
+
+        $("#news-text-two").text(data.news[1].title);
+        var descriptionEltwo = $("<p>");
+        descriptionEltwo.text(data.news[1].description);
+        $("#news-text-two").append(descriptionEltwo);
       });
     }
   
