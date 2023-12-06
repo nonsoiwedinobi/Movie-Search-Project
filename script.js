@@ -53,6 +53,10 @@ function getNewsResults() {
       })
       .then(function (data) {
         console.log(data);
+        $("#news-text").text(data.news[0].title);
+        var descriptionEl = $("<p>");
+        descriptionEl.text(data.news[0].description);
+        $("#news-text").append(descriptionEl);
       });
     }
   
