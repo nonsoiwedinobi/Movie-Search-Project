@@ -18,14 +18,14 @@ $("#search-input").keydown(function (event) {
     getNewsResults();
   }
 });
+
+// Function to fetch movies
 function getMovieResults() {  
     // Here we grab the text from the input box
     var movie = $("#search-input").val();
-  
     // construct our URL
     var queryURL = "https://api.themoviedb.org/3/search/multi?query=" + movie + "%20&include_adult=false&language=en-US&page=1&api_key=82837fb1b2989de9a2119490555d3ff2";
   
-
     // fetch the data
     fetch(queryURL)
       .then(function (response) {
@@ -54,12 +54,9 @@ function getMovieResults() {
         var posterPath = "https://image.tmdb.org/t/p/w500" + data.results[1].poster_path;
         $("#movie_image1").attr("src", posterPath);
       });
-
-      
-  
-    // -----------------------------------------------------------------------
     }
 
+    // Function to get news
 function getNewsResults() {
 
     var news = $("#search-input").val();
