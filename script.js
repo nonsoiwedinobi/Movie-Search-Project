@@ -35,14 +35,24 @@ function getMovieResults() {
         console.log(data);
 
         // Update your HTML with the movie details as needed
-        $("#title").text("Title: " + data.results[0].original_title);
+        $("#title").text("Title: " + data.results[0].title);
         $("#rating").text("Rating: " + data.results[0].vote_average);
-        $("#genre").text("Release Date: " + data.results[0].release_date);
+        $("#release_date").text("Release Date: " + data.results[0].release_date);
         $("#description").text("Description: " + data.results[0].overview);
 
         // Update the movie image with the poster path
         var posterPath = "https://image.tmdb.org/t/p/w500" + data.results[0].poster_path;
         $("#movie_image").attr("src", posterPath);
+
+        // Update your HTML with the movie details as needed
+        $("#title1").text("Title: " + data.results[1].original_name);
+        $("#rating1").text("Rating: " + data.results[1].vote_average);
+        $("#release_date1").text("Release Date: " + data.results[1].release_date);
+        $("#description1").text("Description: " + data.results[1].overview);
+
+        // Update the movie image with the poster path
+        var posterPath = "https://image.tmdb.org/t/p/w500" + data.results[1].poster_path;
+        $("#movie_image1").attr("src", posterPath);
       });
 
       
