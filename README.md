@@ -63,6 +63,10 @@ What2Watch is a web application designed to provide users with a seamless experi
 - Elehin Duale
 - Nonso Iwedinobi
 
+## Web URL
+
+- https://nonsoiwedinobi.github.io/what2watch/
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
