@@ -132,6 +132,10 @@ img {
 
 
 
+#footer {
+    margin-bottom: 0px;
+}
+
 .footer-content {
     padding: 5px 5px;
     display: flex;
