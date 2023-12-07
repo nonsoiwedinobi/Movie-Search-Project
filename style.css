@@ -126,17 +126,20 @@ img {
 
 
 /* Footer */
+
 #footer {
     margin-bottom: 0;
 }
-
-
 
 .footer-content {
     padding: 5px 5px;
     display: flex;
     justify-content: space-evenly;
     background-color: #000;
+}
+
+.footer-content ul li {
+    padding-top: 10px;
 }
 
 .footer-content ul {
@@ -164,6 +167,7 @@ img {
 
 .logoinfo {
     margin-right: 0;
+    padding: 20px 20px;
 }
 
 .logoinfo .navbar-brand {
@@ -196,6 +200,10 @@ img {
     margin-top: 10px;
 }
 
+.contact-details ul {
+    padding: 0;
+}
+
 .contact-details li {
     list-style: none;
     margin: 5px 5px;
@@ -216,11 +224,17 @@ img {
 /* about section */
 
 .about-section {
-    margin-top: 15px;
+    margin-top: 10px;
+    padding: 20px 20px;
+}
+
+.about-section h1 {
+    padding: 20px 20px;
 }
 
 .about-section ul {
-    padding: 10px 0;
+    padding-top: 0px;
+    padding-left: 20px;
 }
 
 .about-section ul li {
@@ -240,6 +254,7 @@ img {
 /* social media section */
 
 .media-content {
+    padding: 15px 10px;
     margin-top: 15px;
 }
 
