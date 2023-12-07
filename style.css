@@ -23,8 +23,7 @@ a {
 /* NavBar */
 
 .navbar {
-    background-color: #343a40;
-    /* Dark background color */
+    background-color: #000;
 }
 
 .navbar-light .navbar-brand,
@@ -38,7 +37,6 @@ a {
 }
 
 .navbar-brand {
-    margin-left: rem;
     font-size: 2rem;
 }
 
