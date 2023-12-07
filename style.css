@@ -130,8 +130,6 @@ img {
     margin-bottom: 0;
 }
 
-
-
 .footer-content {
     padding: 5px 5px;
     display: flex;
@@ -171,7 +169,6 @@ img {
     font-size: 25px;
 }
 
-
 /* copyright section */
 
 .outside-footer {
@@ -194,6 +191,10 @@ img {
 
 .contact-details {
     margin-top: 10px;
+}
+
+.contact-details ul {
+    padding: 0;
 }
 
 .contact-details li {
