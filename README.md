@@ -60,7 +60,7 @@ What2Watch is a web application designed to provide users with a seamless experi
 ## Contributing
 
 - Paulina Zdunek
-- Duale Elehin
+- Elehin Duale
 - Nonso Iwedinobi
 
 ## License
